@@ -1,0 +1,39 @@
+.NavigationItem {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    margin: 0;
+}
+
+
+
+.NavigationItem a {
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    color: white;
+    padding: 13px 10px;
+    transition: color 0.4s, background-color 0.4s;
+}
+
+.NavigationItem a:hover {
+    color: rgb(45, 121, 208);
+    background-color: white;
+
+}
+
+
+
+@media (max-width: 500px) {
+    .NavigationItem a {
+        color: rgb(45, 121, 208);
+        background-color: white;
+    }
+}
+
+
+
