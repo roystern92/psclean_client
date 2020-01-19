@@ -1,21 +1,31 @@
 import React from 'react';
+import Logo from '../../Logo/Logo';
 import classes from './Toolbar.module.css';
 import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle';
-import Logo from '../../Logo/Logo';
-import {NavLink} from 'react-router-dom';
 import NavigationItems from '../NavigationItems/NavigationItems';
 
-const toolbar = (props) => (
-    <header className={classes.Toolbar}>
+const toolbar = (props) => {
+    let toolbarClasses = [classes.Toolbar];
+    if (props.showSideDrawer) {
+        toolbarClasses.push(classes.SideDrawerOpen);
+    }
 
 
-        <nav className={classes.DesktopOnly}>
-            <NavigationItems isAuth={props.isAuth}/>
-        </nav>
+    return (
+        <header className={toolbarClasses.join(' ')}>
+
+            <div className={classes.Logo}>
+                <Logo />
+            </div>
+            <DrawerToggle clicked={props.drawerToggleClicked} />
+
+            <nav className={classes.DesktopOnly}>
+                <NavigationItems />
+            </nav>
 
 
-        <DrawerToggle clicked={props.drawerToggleClicked}/>
-    </header>
-);
+        </header>);
+
+}
 
 export default toolbar;

@@ -1,9 +1,17 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Logo from '../../Logo/Logo';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import classes from './SideDrawer.module.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';
+
+// Todo  make routesTypes file
+
+const HOME_ROUTE = '/';
+const CLEANING_ROUTE = '/clean';
+const GARDENING_ROUTE = '/garden';
+const ABOUT_ROUTE = '/about';
+const CONTACT_ROUTE = '/contact';
 
 const sideDrawer = (props) => {
     let attachedClasses = [classes.SideDrawer, classes.Close];
@@ -14,23 +22,48 @@ const sideDrawer = (props) => {
     let routes = <nav>
         <NavLink
             exact
-            to='/signIn'
+            to={CLEANING_ROUTE}
         >
             <div className={classes.MobileNavItem}>
-                Sign in
+                נקיון ואחזקה
             </div>
 
         </NavLink>
 
-        <hr/>
+        <hr />
 
 
         <NavLink
             exact
-            to='/signUp'
+            to={GARDENING_ROUTE}
         >
             <div className={classes.MobileNavItem}>
-                Sign up
+                גינון
+            </div>
+
+        </NavLink>
+
+        <hr />
+
+
+        <NavLink
+            exact
+            to={ABOUT_ROUTE}
+        >
+            <div className={classes.MobileNavItem}>
+                אודות
+            </div>
+
+        </NavLink>
+
+        <hr />
+
+        <NavLink
+            exact
+            to={CONTACT_ROUTE}
+        >
+            <div className={classes.MobileNavItem}>
+                צור קשר
             </div>
 
         </NavLink>
@@ -38,59 +71,11 @@ const sideDrawer = (props) => {
     </nav>;
 
 
-    if(props.isAuth){
-        routes =  <nav>
-            <NavLink
-                exact
-                to='/my-day'
-            >
-                <div className={classes.MobileNavItem}>
-                    My day
-                </div>
-
-            </NavLink>
-
-            <hr/>
-
-            <NavLink
-                exact
-                to='/profile'
-            >
-                <div className={classes.MobileNavItem}>
-                    Profile
-                </div>
-
-            </NavLink>
-
-            <hr/>
-
-
-
-            <NavLink
-                exact
-                to='/logout'
-            >
-                <div className={classes.MobileNavItem}>
-                    Log out
-                </div>
-
-            </NavLink>
-
-        </nav>;
-
-    }
-
-
     return (
         <Fragment>
-            <Backdrop show={props.open} clicked={props.closed}/>
+            <Backdrop show={props.open} clicked={props.closed} />
             <div className={attachedClasses.join(' ')} onClick={props.closed}>
-                <div className={classes.Logo}>
-                    <Logo/>
-                </div>
-
                 {routes}
-
             </div>
         </Fragment>
     );

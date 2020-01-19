@@ -5,7 +5,7 @@ const logo = (props) => (
     <div className={classes.Container}>
         
         <div className={classes.Title}>
-            <h2>TASKS</h2>
+            <h2>.פ.ש</h2>
         </div>
 
     </div>
