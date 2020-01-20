@@ -1,29 +1,23 @@
 .Button {
-    background-color: transparent;
+    background-color: rgb(34, 31, 32);
     border: none;
     color: white;
     outline: none;
     cursor: pointer;
     font: inherit;
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 2px;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
-.Button:first-of-type {
-    margin-left: 0;
-    padding-left: 0;
-}
 
 .Button:disabled {
     color: #ccc;
     cursor: not-allowed;
 }
 
-.Success {
-    color: #5C9210;
+.AlignSelf{
+    align-self: flex-start;
 }
 
-.Danger {
-    color: #944317;
-}
