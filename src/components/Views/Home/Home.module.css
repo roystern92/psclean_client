@@ -1,0 +1,13 @@
+
+
+@media (min-width: 700px) { 
+    .Grid{
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .GridItem2{
+        grid-template-rows: 1/2;
+    }
+}

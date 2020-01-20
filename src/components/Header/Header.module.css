@@ -10,9 +10,9 @@
 .Header h1{
     text-align: center;
     margin: 0;
-    padding-bottom: 35px;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 3.2rem;
+    padding-bottom: 15px;
+    color: rgba(34, 31, 32);
+    font-size: 2.8rem;
     font-weight: bold;
     font-family: 'Heebo', sans-serif;
     text-shadow:2px 2px 2px #333 ;
@@ -20,8 +20,8 @@
 
 .Header .Title{
     position: absolute;
-    top: 155px;
-    left: calc(50% - 142px);
+    top: 90px;
+    left: calc(50% - 125px);
 }
 
 .Header .Title .Icon{
@@ -32,7 +32,7 @@
 
 .Header::after {
     content: "";
-    background: url('../../assets/images/header2.jpeg');
+    background: url('../../assets/images/cleanPrivateHouses/cleanPrivateHouses1B&W.JPG');
     background-size: cover;
     
     opacity: 0.9;
@@ -46,4 +46,24 @@
 
 
 
-  
+@media (min-width: 700px) { 
+    .Header {
+        height: 700px;
+
+    }
+
+    .Header::after {
+        background-position-y: -400px;
+    }
+
+    .Header .Title{
+        top: 250px;
+        left: calc(50% - 190px);
+
+    }
+
+    .Header h1{
+        font-size: 4.3rem;
+    }
+
+}
