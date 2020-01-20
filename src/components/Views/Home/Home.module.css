@@ -7,7 +7,19 @@
         grid-template-columns: 3fr 2fr;
     }
 
-    .GridItem2{
-        grid-template-rows: 1/2;
+    .Grid:nth-last-of-type(even){
+        grid-template-columns: 2fr 3fr;
+
     }
+
+    .GridItem1{
+        order: 2;
+        height: 500px;
+    }
+
+    .GridItem2{
+        order: 1;  
+        height: 500px;
+    }
+
 }

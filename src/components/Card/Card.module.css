@@ -1,26 +1,25 @@
-.Card{
+.Card {
     width: 100%;
     background: #eeeeee;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     /* align-items: flex-start; */
     padding: 55px 50px;
-
-
 }
 
-
-.Card .Title{
+.Card .Title {
     font-size: 2.5rem;
     font-family: 'Heebo', sans-serif;
 }
 
-
-
-.Card .Content{
+.Card .Content {
     font-size: 1.4rem;
     font-family: 'Heebo', sans-serif;
 }
 
-
+@media (min-width: 700px) {
+    .Card {
+        height: 100%;
+    }
+}
