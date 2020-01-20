@@ -1,25 +1,38 @@
-
-
-@media (min-width: 700px) { 
-    .Grid{
+@media (min-width: 700px) {
+    .Grid {
+        position: relative;
         display: grid;
         grid-template-rows: 500px;
         grid-template-columns: 3fr 2fr;
     }
-
-    .Grid:nth-last-of-type(even){
+    .Grid:nth-last-of-type(even) {
         grid-template-columns: 2fr 3fr;
-
     }
-
-    .GridItem1{
+    .GridItem1 {
         order: 2;
         height: 500px;
     }
-
-    .GridItem2{
-        order: 1;  
+    .GridItem2 {
+        order: 1;
         height: 500px;
     }
-
+    /* tests */
+    .Grid:nth-of-type(odd)::after {
+        content: '';
+        position: absolute;
+        height: 70px;
+        width: 150%;
+        background: #eeeeee;
+        transform-origin: top left;
+        transform: rotate(-2deg);
+    }
+    .Grid:nth-of-type(even)::after {
+        content: '';
+        position: absolute;
+        height: 70px;
+        width: 150%;
+        background: #eeeeee;
+        transform-origin: top right;
+        transform: rotate(2deg);
+    }
 }

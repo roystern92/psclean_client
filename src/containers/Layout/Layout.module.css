@@ -1,10 +1,11 @@
 .Content {
     width: 100%;
     margin-top: 64px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     transition: transform 0.3s ease-out;
 }
 
-.SideDrawerOpen{
+.SideDrawerOpen {
     transform: translateX(-80%);
 }
