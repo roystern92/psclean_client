@@ -1,5 +1,5 @@
 .Toolbar{
-    height: 64px;
+    height: 90px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -23,7 +23,6 @@
 
 
 .SideDrawerOpen{
-    /* transform: translateX(-80%); */
     background-color: black;
 }
 

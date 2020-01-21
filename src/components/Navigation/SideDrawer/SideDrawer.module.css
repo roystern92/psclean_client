@@ -8,8 +8,9 @@
     background-color: white;
     padding: 80px 16px;
     box-sizing: border-box;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s linear;
     background-color: white;
+
 }
 
 .SideDrawer hr {
@@ -37,6 +38,7 @@
 
 .Open {
     transform: translateX(0);
+
 }
 
 .Close {

@@ -8,11 +8,12 @@ class Home extends Component {
     render() {
     
         return (
-            <div>
+            <div className={classes.Home}>
                 <Header/>
+                
                 <section className={classes.Grid}> 
-                <Image class='DesktopOnly' img='OfficeAndBuilding/OfficeAndBuilding2.jpg'/> 
-                <Card title='למה לבחור בנו? ' content='נקיון זה לא צחוק, זה צורך זמן, מאמץ ולכלוך.
+                    <Image class='DesktopOnly' img='OfficeAndBuilding/OfficeAndBuilding2.jpg'/> 
+                    <Card title='למה לבחור בנו? ' content='נקיון זה לא צחוק, זה צורך זמן, מאמץ ולכלוך.
                     אנחנו יודעים שהנקיון והתחזוקה חשובים לכם, לכן אנו מתמקדים באיכות.' />  
                 </section>
 

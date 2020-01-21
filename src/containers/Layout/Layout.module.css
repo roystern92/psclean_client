@@ -1,11 +1,15 @@
 .Content {
     width: 100%;
-    margin-top: 64px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transition: transform 0.3s ease-out;
+    margin-top: 90px;
+    position: relative;
+    /* overflow-x: auto; */
+    /* -webkit-overflow-scrolling: touch; */
+    transition: transform 0.3s ease-in-out;
+
 }
 
 .SideDrawerOpen {
     transform: translateX(-80%);
+
+
 }

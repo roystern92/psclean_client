@@ -15,11 +15,12 @@
 
 .Title h2 {
     font-family: 'Bellefair', serif;
-    font-size: 36px;
+    font-size: 62px;
     letter-spacing: 1px;
     margin: 0rem;
     /* padding-left: 20px; */
     color: white;
+    margin-bottom: 7px;
 
 }
 
