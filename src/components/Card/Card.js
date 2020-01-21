@@ -6,6 +6,8 @@ import { NavLink } from 'react-router-dom';
 class Card extends Component {
     render() {
 
+        let cardClass = this.props.header ? classes.Header : classes.Card;
+
         let link;
         if (this.props.route) {
             link =
@@ -15,7 +17,7 @@ class Card extends Component {
         }
 
         let card =
-            <div className={classes.Card}>
+            <div className={cardClass}>
                 <h1 className={classes.Title}>{this.props.title}</h1>
                 <p className={classes.Content}>{this.props.content} </p>
                 {link}

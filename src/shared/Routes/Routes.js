@@ -1,6 +1,7 @@
 import React from "react";
 import {Route, Switch, Redirect} from 'react-router-dom';
 import Home from '../../components/Views/Home/Home';
+import Clean from '../../components/Views/Clean/Clean';
 
 
 const HOME_ROUTE = '/';
@@ -15,7 +16,7 @@ const CONTACT_ROUTE = '/contact';
 const routes = (props) => {
     let routes = (
         <Switch>
-            <Route path={CLEANING_ROUTE} exact component={Home}/>
+            <Route path={CLEANING_ROUTE} exact component={Clean}/>
             <Route path={ABOUT_ROUTE} exact component={Home}/>
             <Route path={GARDENING_ROUTE} exact component={Home}/>
             <Route path={CONTACT_ROUTE} exact component={Home}/>

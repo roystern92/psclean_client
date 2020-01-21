@@ -1,25 +1,43 @@
-.Card {
-    width: 100%;
-    background: #eeeeee;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: flex-start; */
-    padding: 55px 50px;
+.Card,
+.Header {
+  width: 100%;
+  background: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+  padding: 55px 50px;
 }
 
-.Card .Title {
-    font-size: 2.5rem;
-    font-family: 'Heebo', sans-serif;
+.Card .Title,
+.Header .Title {
+  font-size: 2.5rem;
+  font-family: "Heebo", sans-serif;
 }
 
-.Card .Content {
-    font-size: 1.4rem;
-    font-family: 'Heebo', sans-serif;
+.Card .Content,
+.Header .Content {
+  font-size: 1.4rem;
+  font-family: "Heebo", sans-serif;
 }
 
 @media (min-width: 700px) {
-    .Card {
-        height: 100%;
-    }
+  .Card {
+    height: 100%;
+  }
+
+  .Header {
+    height: 400px;
+  }
+
+  .Header .Title {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 4.5rem;
+  }
+
+  .Header .Content {
+    text-align: center;
+    font-size: 2.4rem;
+  }
 }
