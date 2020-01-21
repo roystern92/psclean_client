@@ -1,5 +1,4 @@
-.Card,
-.Header {
+.Card,.Header {
   width: 100%;
   background: #eeeeee;
   display: flex;
