@@ -7,11 +7,11 @@ import Backdrop from '../../UI/Backdrop/Backdrop';
 
 // Todo  make routesTypes file
 
-const HOME_ROUTE = '/';
 const CLEANING_ROUTE = '/clean';
 const GARDENING_ROUTE = '/garden';
 const ABOUT_ROUTE = '/about';
 const CONTACT_ROUTE = '/contact';
+
 
 const sideDrawer = (props) => {
     let attachedClasses = [classes.SideDrawer, classes.Close];
@@ -20,55 +20,30 @@ const sideDrawer = (props) => {
     }
 
     let routes = <nav>
-        <NavLink
-            exact
-            to={CLEANING_ROUTE}
-        >
-            <div className={classes.MobileNavItem}>
-                נקיון ואחזקה
-            </div>
-
-        </NavLink>
-
-        <hr />
-
-
-        <NavLink
-            exact
-            to={GARDENING_ROUTE}
-        >
-            <div className={classes.MobileNavItem}>
-                גינון
-            </div>
-
-        </NavLink>
-
-        <hr />
-
-
-        <NavLink
-            exact
-            to={ABOUT_ROUTE}
-        >
-            <div className={classes.MobileNavItem}>
-                אודות
-            </div>
-
-        </NavLink>
-
-        <hr />
-
-        <NavLink
-            exact
-            to={CONTACT_ROUTE}
-        >
-            <div className={classes.MobileNavItem}>
-                צור קשר
-            </div>
-
-        </NavLink>
-
-    </nav>;
+    <NavLink exact to={CLEANING_ROUTE}>
+        <div className={classes.MobileNavItem}>
+            נקיון ואחזקה
+        </div>
+    </NavLink>
+    <hr />
+    <NavLink exact to={GARDENING_ROUTE}>
+        <div className={classes.MobileNavItem}>
+            גינון
+        </div>
+    </NavLink>
+    <hr />
+    <NavLink exact to={ABOUT_ROUTE}>
+        <div className={classes.MobileNavItem}>
+            אודות
+        </div>
+    </NavLink>
+    <hr />
+    <NavLink exact to={CONTACT_ROUTE}>
+        <div className={classes.MobileNavItem}>
+            צור קשר
+        </div>
+    </NavLink>
+</nav>;
 
 
     return (

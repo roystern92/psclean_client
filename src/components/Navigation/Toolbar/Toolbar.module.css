@@ -20,8 +20,6 @@
 }
 
 
-
-
 .SideDrawerOpen{
     background-color: black;
 }
@@ -30,4 +28,12 @@
     display: none;
 }
 
+@media(min-width: 700px){
+    .Toolbar{
+        padding:0 ;
+    }    
 
+    .DesktopOnly {
+        display: block;
+    }
+}

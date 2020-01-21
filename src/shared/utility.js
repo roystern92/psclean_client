@@ -1,3 +1,4 @@
+
 export const checkValidity = ( value, rules ) => {
     let isValid = true;
     if ( !rules ) {
@@ -28,6 +29,7 @@ export const checkValidity = ( value, rules ) => {
 
     return isValid;
 };
+
 
 export const createArrayFromObject = (obj) => {
     let formElementsArray = [];

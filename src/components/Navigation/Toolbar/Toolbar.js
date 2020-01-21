@@ -15,13 +15,15 @@ const toolbar = (props) => {
         <header className={toolbarClasses.join(' ')}>
 
             <DrawerToggle clicked={props.drawerToggleClicked} />
+            
+            <nav className={classes.DesktopOnly}>
+                <NavigationItems />
+            </nav>
 
             <div className={classes.Logo}>
                 <Logo />
             </div>
-            <nav className={classes.DesktopOnly}>
-                <NavigationItems />
-            </nav>
+          
 
 
         </header>);
