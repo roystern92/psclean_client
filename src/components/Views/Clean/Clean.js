@@ -1,9 +1,22 @@
 import React, { Component } from 'react'
 import Card from '../../Card/Card';
 import Image from '../../Image/Image';
+import {animateScroll} from "react-scroll";
 import classes from '../Home/Home.module.css';
 
 class Clean extends Component {
+
+    scrollToTop() {
+        animateScroll.scrollToTop({
+            containerId: "scroll"
+        });
+    };
+
+    componentDidMount() {
+        this.scrollToTop();
+    }
+
+
     render() {
     
         return (

@@ -1,7 +1,20 @@
 import React, { Component } from 'react';
 import classes from './About.module.css';
+import {animateScroll} from "react-scroll";
+
 
 class About extends Component {
+
+    scrollToTop() {
+        animateScroll.scrollToTop({
+            containerId: "scroll"
+        });
+    };
+
+    componentDidMount() {
+        this.scrollToTop();
+    }
+
     render() {
 
         let card  =
