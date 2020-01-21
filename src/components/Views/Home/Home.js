@@ -11,8 +11,9 @@ class Home extends Component {
             <div className={classes.Home}>
                 <Header/>
                 
+
                 <section className={classes.Grid}> 
-                    <Image class='DesktopOnly' img='OfficeAndBuilding/OfficeAndBuilding2.jpg'/> 
+                    <Image class='DesktopOnly' img='cleanAndMaintenance/cleanAndMaintenance1.png'/> 
                     <Card title='למה לבחור בנו? ' content='נקיון זה לא צחוק, זה צורך זמן, מאמץ ולכלוך.
                     אנחנו יודעים שהנקיון והתחזוקה חשובים לכם, לכן אנו מתמקדים באיכות.' />  
                 </section>
