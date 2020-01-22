@@ -15,23 +15,30 @@
     .GridItem2 {
         order: 1;
     }
-    /* tests */
-    .Grid:nth-of-type(odd)::after {
+    /* .Grid:nth-of-type(odd)::after {
         content: '';
         position: absolute;
-        height: 70px;
+        height: 15px;
         width: 100%;
         background: #eeeeee;
-        transform-origin: top left;
+        transform-origin: top center;
         transform: rotate(-1deg);
     }
     .Grid:nth-of-type(even)::after {
         content: '';
         position: absolute;
-        height: 70px;
+        height: 15px;
         width: 100%;
         background: #eeeeee;
-        transform-origin: top right;
+        transform-origin: top center;
         transform: rotate(1deg);
+    } */
+}
+
+@media (min-width: 1300px) {
+
+    .Grid {
+        grid-template-rows: 750px;
     }
+
 }

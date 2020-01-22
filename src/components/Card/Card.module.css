@@ -7,7 +7,7 @@
   justify-content: center;
   /* align-items: flex-start; */
   padding: 55px 50px;
-  text-align: center;
+  text-align: start;
 }
 
 .Card .Title,
@@ -19,9 +19,11 @@
 
 .Card .Content,
 .Header .Content {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: "Heebo", sans-serif;
+
 }
+
 
 @media (min-width: 700px) {
   .Card {
@@ -29,7 +31,7 @@
   }
 
   .Header {
-    height: 400px;
+    height: 550px;
   }
 
   .Header .Title {
@@ -42,4 +44,14 @@
     text-align: center;
     font-size: 2.4rem;
   }
+}
+
+@media (min-width: 1300px) {
+  .Card .Title {
+    font-size: 3rem;
+  }
+  .Card .Content {
+    font-size: 1.8rem;
+  }
+
 }

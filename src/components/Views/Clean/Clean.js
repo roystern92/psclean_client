@@ -28,14 +28,14 @@ class Clean extends Component {
                  />
 
                 <section className={classes.Grid}> 
-                    <Image class='' img='renovation/postRenovation.jpg'/> 
+                    <Image class='' img='postRenovation.jpg'/> 
                     <Card title='ניקיון לאחר שיפוץ' content='מכאוס לסדר. לאחר כל שיפוץ מופיעים האבק והלכלוך, לכן תצטרך לצידך צוות שיתן לך את מירב תשומת הלב.' />  
                 </section>
 
 
                  <section className={classes.Grid}> 
                  <div className={classes.GridItem1}>
-                 <Image class=''  img='Maintenance/Maintenance1.JPG'/> 
+                 <Image class=''  img='Maintenance1.jpg'/> 
                  </div>
                  <div className={classes.GridItem2}>
                  <Card   
@@ -46,15 +46,14 @@ class Clean extends Component {
                 </section>
 
                 <section className={classes.Grid}> 
-                    <Image class='' img='cleanHouse2.jpg'/> 
+                    <Image class='' img='livingRoom.jpg'/> 
                     <Card title='ניקוי בתים פרטים ודירות' content='אנחנו מבינים את החשיבות של בית נקי ומסודר. לכן אנו מתמקדים באיכות הנקיון. שטיפה כללית של הבית, ניקוי גגות, ניקוי מרזבים, והברקת חלונות הבית.' />
                     
                 </section>
 
-                src/assets/cleanHouse3.jpg
                 <section className={classes.Grid}> 
                  <div className={classes.GridItem1}>
-                 <Image class=''  img='OfficeAndBuilding/OfficeAndBuildin4.jpg'/> 
+                 <Image class=''  img='OfficeAndBuildin4.jpg'/> 
                  </div>
                  <div className={classes.GridItem2}>
                  <Card   

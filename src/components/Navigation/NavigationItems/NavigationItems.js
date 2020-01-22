@@ -10,7 +10,7 @@ const navigationItems = (props) => {
             <NavigationItem link="/clean" exact>ניקיון ואחזקה</NavigationItem>
             <NavigationItem link="/garden" exact>גינון</NavigationItem>
             <NavigationItem link="/about" exact>אודות</NavigationItem>
-            <NavigationItem link="/contact" exact>וצור קשר</NavigationItem>
+            <NavigationItem link="/contact" exact>צור קשר</NavigationItem>
         </ul>
     );
 

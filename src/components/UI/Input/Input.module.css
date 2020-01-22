@@ -1,7 +1,7 @@
 .Input {
     width: 100%;
-    padding: 10px;
     box-sizing: border-box;
+    margin: 10px 0;
 }
 
 .Label {
@@ -13,11 +13,11 @@
 }
 
 .InputElement {
-    height: 40px;
+    height: 60px;
     font-weight: bold;
     outline: none;
     border: none;
-    border-bottom: 1px solid rgb(91, 99, 102);
+    border: 2px solid rgb(40, 40, 40);
     background-color: rgb(232, 240, 254);
     padding: 6px 10px;
     display: block;
