@@ -30,7 +30,7 @@
 
 @media(min-width: 700px){
     .Toolbar{
-        padding:0 ;
+        padding-right:0 ;
     }    
 
     .DesktopOnly {

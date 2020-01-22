@@ -1,5 +1,4 @@
 .About {
-    position: fixed;
     background: #eeeeee;
     height: 100%;
     width: 100%;
@@ -7,25 +6,24 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 50px 35px; 
+    font-family: "Heebo", sans-serif;
   }
   
   .About .Title {
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
-    font-family: "Heebo", sans-serif;
   }
   
   .About .Content{
     font-size: 1.3rem;
-    font-family: "Heebo", sans-serif;
   }
   
   @media (min-width: 700px) {
     .About {
         /* position: relative; */
         padding-top: 100px; 
-        padding: 100px 350px;
+        padding: 100px 250px;
     }
   
     .About .Title {
@@ -33,7 +31,7 @@
     }
   
     .About .Content {
-      text-align: center;
+      text-align: start;
       font-size: 1.5rem;
     }
   }
