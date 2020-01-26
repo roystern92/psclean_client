@@ -79,27 +79,19 @@ class Contact extends Component {
   };
 
   createSubmitButton = () => {
-    let submit = "שלח";
     let button = (
-      <div
-        onClick={event => {
+      <div onClick={event => {
           if (this.state.formIsValid) {
             this.submitHandler(event);
           }
         }}
-        className={
-          this.state.formIsValid
-            ? classes.Submit
-            : classes.SubmitDisabled + " " + classes.Submit
-        }
-      >
-        <Button disabled={!this.state.formIsValid}>{submit}</Button>
+        className={this.state.formIsValid ? classes.Submit: classes.SubmitDisabled + " " + classes.Submit}>
+        <button disabled={!this.state.formIsValid} className={classes.Btn}>שלח</button>  
       </div>
     );
 
     return button;
   };
-
   submitHandler = event => {
     event.preventDefault();
     console.log("contact our server and send pniel an email.");

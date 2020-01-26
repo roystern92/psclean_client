@@ -1,7 +1,10 @@
 .Card,.Header {
+  background: url('../../assets/images/card.jpg');
+  background-size: cover;
+
   height: 450px;
   width: 100%;
-  background: #eeeeee;
+  /* background: #eeeeee; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +22,7 @@
 
 .Card .Content,
 .Header .Content {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: "Heebo", sans-serif;
 
 }
@@ -28,10 +31,13 @@
 @media (min-width: 700px) {
   .Card {
     height: 100%;
+    background: none;
   }
 
   .Header {
     height: 550px;
+    background: none;
+
   }
 
   .Header .Title {

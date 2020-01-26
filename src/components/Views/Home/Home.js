@@ -29,7 +29,7 @@ class Home extends Component {
           />
 
         <section className={classes.Grid}>
-          <Image class="" img="clean3.jpeg" />
+          <Image class="" img="clean3.jpg" />
 
           <Card
             title="נקיון ואחזקה"
