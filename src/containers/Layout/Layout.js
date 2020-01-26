@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react';
 import classes from './Layout.module.css';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
+import PhoneLink from '../../components/PhoneLink/PhoneLink'
 
 
 class Layout extends Component {
@@ -43,6 +44,7 @@ class Layout extends Component {
                     <div className={childrenClass.join(" ")}>
                         {this.props.children}
                     </div>
+                    <PhoneLink phone='0549887777'/>
                 </main>
             </Fragment>
         )
