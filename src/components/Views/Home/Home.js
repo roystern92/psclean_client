@@ -3,17 +3,11 @@ import Header from "../../Header/Header";
 import Card from "../../Card/Card";
 import Image from "../../Image/Image";
 import classes from "./Home.module.css";
-import { animateScroll } from "react-scroll";
 
 class Home extends Component {
-  scrollToTop() {
-    animateScroll.scrollToTop({
-      containerId: "scroll"
-    });
-  }
 
   componentDidMount() {
-    this.scrollToTop();
+    window.scrollTo(0, 0);
   }
 
   render() {

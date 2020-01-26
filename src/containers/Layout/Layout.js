@@ -3,7 +3,7 @@ import classes from './Layout.module.css';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 import PhoneLink from '../../components/PhoneLink/PhoneLink'
-
+import Footer from '../../components/Footer/Footer';
 
 class Layout extends Component {
 
@@ -43,7 +43,10 @@ class Layout extends Component {
                         closed={this.sideDrawerClosedHandler}/>
                     <div className={childrenClass.join(" ")}>
                         {this.props.children}
+
+                    <Footer/>
                     </div>
+
                     <PhoneLink phone='0549887777'/>
                 </main>
             </Fragment>

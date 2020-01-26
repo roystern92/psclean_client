@@ -4,6 +4,7 @@ import Button from '../UI/Button/Button';
 import { NavLink } from 'react-router-dom';
 
 class Card extends Component {
+    
     render() {
 
         let cardClass = this.props.header ? classes.Header : classes.Card;

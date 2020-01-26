@@ -1,20 +1,14 @@
 import React, { Component } from 'react'
 import Card from '../../Card/Card';
 import Image from '../../Image/Image';
-import {animateScroll} from "react-scroll";
 import classes from '../Home/Home.module.css';
 
 class Garden extends Component {
 
-    scrollToTop() {
-        animateScroll.scrollToTop({
-            containerId: "scroll"
-        });
-    };
-
     componentDidMount() {
-        this.scrollToTop();
-    }
+        window.scrollTo(0, 0);
+      }
+    
     render() {
     
         return (
