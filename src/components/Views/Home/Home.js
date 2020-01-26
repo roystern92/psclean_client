@@ -22,7 +22,7 @@ class Home extends Component {
                     אנחנו יודעים שהנקיון והתחזוקה חשובים לכם, לכן אנו מתמקדים באיכות."
           />
 
-        <section className={classes.Grid}>
+        <section className={classes.Row}>
           <Image class="" img="clean3.jpg" />
 
           <Card
@@ -33,19 +33,14 @@ class Home extends Component {
           />
         </section>
 
-        <section className={classes.Grid}>
-          <div className={classes.GridItem1}>
+        <section className={classes.Row}>
             <Image class="" img="gardening1.jpg" />
-          </div>
-
-          <div className={classes.GridItem2}>
             <Card
               title="שרותי גינון"
               content="אנחנו מספקים מגוון רחב של שירותי גינון. מכיסוח דשא, גיזום עצים ועד תחזוק שוטף של הגינה."
               text="למידע נוסף..."
               route="/garden"
             />
-          </div>
         </section>
       </div>
     );

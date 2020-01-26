@@ -19,18 +19,14 @@ class Garden extends Component {
                  content='אנחנו מספקים מגוון רחב של שירותי גינון. מכיסוח דשא, גיזום עצים ועד תחזוק שוטף של הגינה.'
                  />
 
-                <section className={classes.Grid}> 
+                <section className={classes.Row}> 
                     <Image class='' img='designGardens.jpg'/> 
                     <Card  title='אחזקה' content='שירותי תחזוקת הגינה שאנו מספקים נועדו לחסוך לך זמן ומאמץ מיותרים. טיפול שוטף של הגינה שכולל כיסוח הדשא, גירוף ופינוי העלווה, גיזום עצים, שתילה ועוד. בניית מערכת השקייה אוטמטית או תחזוק של אחת קיימת.'/>
                 </section>
 
-                 <section className={classes.Grid}> 
-                 <div className={classes.GridItem1}>
+                 <section className={classes.Row}> 
                  <Image class='' img='Gardener.jpg'/> 
-                 </div>
-                 <div className={classes.GridItem2}>
                  <Card  title='עיצוב גינות' content='יצירת גינת החלומות. בריכות נוי, מזרקות, שתילת עצים, ועיצוב עצים.'/>
-                 </div>
                 </section>
             </div>
         )

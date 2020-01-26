@@ -1,6 +1,7 @@
 .Card,.Header {
   background: url('../../assets/images/card.jpg');
-  background-size: cover;  height: 450px;
+  background-size: cover;  
+  height: 450px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -33,29 +34,19 @@
   }
 
   .Header {
-    height: 550px;
+    height: 400px;
     background: #eeeeee;
-
+    padding: 0 250px;
   }
 
   .Header .Title {
-    padding-top: 50px;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 
   .Header .Content {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 1.7rem;
   }
 }
 
-@media (min-width: 1300px) {
-  .Card .Title {
-    font-size: 3rem;
-  }
-  .Card .Content {
-    font-size: 1.8rem;
-  }
-
-}

@@ -21,7 +21,6 @@
   
   @media (min-width: 700px) {
     .About {
-        /* position: relative; */
         padding-top: 100px; 
         padding: 100px 250px;
     }

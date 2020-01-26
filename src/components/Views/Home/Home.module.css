@@ -4,46 +4,27 @@
 
 
 @media (min-width: 700px) {
-    .Grid {
-        position: relative;
-        display: grid;
-        grid-template-rows: 550px;
-        grid-template-columns: 3fr 2fr;
+    .Row {
+        display: flex;
+        height: 450px;
     }
-    .Grid:nth-of-type(even) {
-        grid-template-columns: 2fr 3fr;
+
+    .Row:nth-last-of-type(even){
+        flex-direction: row-reverse;
     }
-  
-    .GridItem1 {
-        order: 2;
+
+    .Row div:nth-of-type(odd){
+        width: 60%;
     }
-    .GridItem2 {
-        order: 1;
+    .Row div:nth-of-type(even){
+        width: 40%;
     }
-    /* .Grid:nth-of-type(odd)::after {
-        content: '';
-        position: absolute;
-        height: 15px;
-        width: 100%;
-        background: #eeeeee;
-        transform-origin: top center;
-        transform: rotate(-1deg);
-    }
-    .Grid:nth-of-type(even)::after {
-        content: '';
-        position: absolute;
-        height: 15px;
-        width: 100%;
-        background: #eeeeee;
-        transform-origin: top center;
-        transform: rotate(1deg);
-    } */
 }
 
-@media (min-width: 1300px) {
+/* @media (min-width: 1300px) {
 
     .Grid {
-        grid-template-rows: 750px;
+
     }
 
-}
+} */
