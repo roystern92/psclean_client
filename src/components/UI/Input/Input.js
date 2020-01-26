@@ -11,6 +11,8 @@ const input = (props) => {
         inputClasses.push(classes.Invalid);
     }
 
+    
+
     switch (props.elementType) {
         case ('input'):
             inputElement = <input
@@ -21,7 +23,7 @@ const input = (props) => {
             break;
         case ('textarea'):
             inputElement = <textarea
-                className={inputClasses.join(' ')}
+                className={classes.TextareaElement}
                 {...props.elementConfig}
                 value={props.value}
                 onChange={props.changed} />;

@@ -43,7 +43,7 @@ export const contactControl = {
     },
 
     message: {
-        elementType: 'input',
+        elementType: 'textarea',
         elementConfig: {
             type: 'textarea',
             placeholder: 'תוכן הפנייה '

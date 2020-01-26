@@ -1,17 +1,15 @@
 .Card,.Header {
   background: url('../../assets/images/card.jpg');
-  background-size: cover;
-
-  height: 450px;
+  background-size: cover;  height: 450px;
   width: 100%;
-  /* background: #eeeeee; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: flex-start; */
   padding: 55px 50px;
   text-align: start;
+  position: relative;
 }
+
 
 .Card .Title,
 .Header .Title {
@@ -22,21 +20,21 @@
 
 .Card .Content,
 .Header .Content {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: "Heebo", sans-serif;
-
+  text-shadow:1px 1px 1px #fff ;
 }
 
 
 @media (min-width: 700px) {
   .Card {
+
     height: 100%;
-    background: none;
   }
 
   .Header {
     height: 550px;
-    background: none;
+    background: #eeeeee;
 
   }
 
