@@ -5,7 +5,6 @@ import { createArrayFromObject, checkValidity } from "../../../shared/utility";
 import axios from '../../../shared/axios/axios'
 
 import Spinner from "../../UI/Spinner/Spinner";
-import Button from "../../UI/Button/Button";
 import Input from "../../UI/Input/Input";
 import { contactControl } from "../../../shared/Controls/contact";
 
@@ -98,18 +97,16 @@ class Contact extends Component {
 
   submitHandler = event => {
     event.preventDefault();
-    console.log("contact our server and send pniel an email.");
-
-    const formData = new FormData();
-
-    formData.append('name', this.state.controls.name.value);
-    formData.append('email', this.state.controls.email.value);
-    formData.append('phone', this.state.controls.phone.value);
-    formData.append('message', this.state.controls.message.value);
+    let data = {
+      'name': this.state.controls.name.value,
+      'email' : this.state.controls.email.value,
+      'phone' : this.state.controls.phone.value,
+      'message' : this.state.controls.message.value
+    };
 
     const url = '/admin/contact'
-
-    axios.post(url, formData);
+    
+    axios.post(url, data);
 
   };
 
