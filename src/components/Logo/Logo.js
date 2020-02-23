@@ -6,7 +6,7 @@ const logo = (props) => (
         <NavLink exact to={'/'}>
             <div className={classes.Container}>
                 <div className={classes.Logo}>
-                <img src={require('../../assets/images/logo.jpg')} alt="text"/>
+                <img src={require('../../assets/images/logo.png')} alt="text"/>
                 </div>
            </div>
     </NavLink>
