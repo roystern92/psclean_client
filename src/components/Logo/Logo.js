@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 const logo = (props) => (
         <NavLink exact to={'/'}>
             <div className={classes.Container}>
-                <div className={classes.Title}>
-                    <h2 >פ.ש.</h2>
+                <div className={classes.Logo}>
+                <img src={require('../../assets/images/logo.jpg')} alt="text"/>
                 </div>
            </div>
     </NavLink>
