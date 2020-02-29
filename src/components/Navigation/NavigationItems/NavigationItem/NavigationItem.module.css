@@ -1,11 +1,8 @@
 .NavigationItem {
     box-sizing: border-box;
-    width: 120px;
+    width: 135px;
     height: 90px;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     color: white;
     border: 2px solid rgb(34, 31, 32);;
 }
