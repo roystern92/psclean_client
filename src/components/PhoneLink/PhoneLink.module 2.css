@@ -1,0 +1,15 @@
+.PhoneLink{
+    position: fixed;
+    right: 13px;
+    bottom: 10px; 
+    background: rgb(46, 85, 54);
+    padding: 7px;
+    border-radius: 15px;
+}
+
+
+@media (min-width: 700px) {
+    .PhoneLink{
+        display: none;
+    }
+}

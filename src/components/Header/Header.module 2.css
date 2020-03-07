@@ -1,0 +1,87 @@
+.Header {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.Header h1{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255);
+    font-size: 3.1rem;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+    text-shadow:2px 2px 2px #333 ;
+}
+
+.Header .Title{
+    position: absolute;
+    top: 180px;
+    left: calc(50% - 142px);
+}
+
+.Header .Title .Icon{
+    color: white;
+    /* font-size: 5rem; */
+}
+
+
+.Header::after {
+    content: "";
+    background: url('../../assets/images/Test3.jpg');
+    background-size: cover;
+    background-position-x: 45%;
+   
+    
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+
+
+@media (min-width: 700px) { 
+    .Header {
+        height: 600px;
+
+    }
+
+    .Header::after {
+        background-size: 100% 100%;
+
+    }
+
+    .Header .Title{
+        top: calc(50% - 150px);
+        left: calc(25% - 198px);
+
+    }
+
+    .Header h1{
+        font-size: 4.3rem;
+    }
+
+}
+
+
+
+@media (min-width: 1300px) {
+    .Header {
+        height: 900px;
+
+    }
+
+
+
+    .Header h1{
+        font-size: 4.8rem;
+    }
+}
