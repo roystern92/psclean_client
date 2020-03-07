@@ -1,0 +1,30 @@
+.Image{
+    height: 450px;
+    width: 100%;
+
+}
+
+.Image img{
+    height: 100%;
+    width: 100%;
+}
+
+.DesktopOnly{
+    display: none;
+}
+
+
+
+@media (min-width: 700px) { 
+
+
+    .DesktopOnly{
+        display: block;
+    }
+
+    .Image{
+        height: 100%;
+
+    }
+    
+}

@@ -1,0 +1,30 @@
+.Home{
+    width: 100%;
+}
+
+
+@media (min-width: 700px) {
+    .Row {
+        display: flex;
+        height: 450px;
+    }
+
+    .Row:nth-last-of-type(even){
+        flex-direction: row-reverse;
+    }
+
+    .Row div:nth-of-type(odd){
+        width: 60%;
+    }
+    .Row div:nth-of-type(even){
+        width: 40%;
+    }
+}
+
+/* @media (min-width: 1300px) {
+
+    .Grid {
+
+    }
+
+} */

@@ -1,0 +1,52 @@
+.SideDrawer {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 200;
+    background-color: white;
+    padding: 80px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s linear;
+    background-color: white;
+
+}
+
+.SideDrawer hr {
+    border-top-color: rgba(255, 255, 255, 0.8);
+    margin: 15px auto;
+    width: 80%;
+}
+
+.SideDrawer .MobileNavItem {
+    /* color: rgb(200 , 200, 200);
+     */
+     color: black;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+
+}
+
+@media (min-width: 700px) {
+    .SideDrawer {
+        display: none;
+    }
+}
+
+.Open {
+    transform: translateX(0);
+
+}
+
+.Close {
+    transform: translateX(100%);
+}
+
+.Logo {
+
+    /*height: 11%;*/
+    margin-bottom: 32px;
+}

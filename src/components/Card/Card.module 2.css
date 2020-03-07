@@ -1,0 +1,52 @@
+.Card,.Header {
+  background: url('../../assets/images/card.jpg');
+  background-size: cover;  
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 55px 50px;
+  text-align: start;
+  position: relative;
+}
+
+
+.Card .Title,
+.Header .Title {
+  
+  font-size: 2.5rem;
+  font-family: "Heebo", sans-serif;
+}
+
+.Card .Content,
+.Header .Content {
+  font-size: 1.5rem;
+  font-family: "Heebo", sans-serif;
+  text-shadow:1px 1px 1px #fff ;
+}
+
+
+@media (min-width: 700px) {
+  .Card {
+
+    height: 100%;
+  }
+
+  .Header {
+    height: 400px;
+    background: #eeeeee;
+    padding: 0 250px;
+  }
+
+  .Header .Title {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .Header .Content {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+}
+
