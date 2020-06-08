@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## PS CLEAN
+A landing page for a small cleaning company. 
 
-## Available Scripts
+## Status
+This project is over and has been deployed.
 
-In the project directory, you can run:
+[![Image from Gyazo](https://i.gyazo.com/7bf635c043b9b8fbf39e27f25803cdef.gif)](https://gyazo.com/7bf635c043b9b8fbf39e27f25803cdef)
 
-### `npm start`
+[![Image from Gyazo](https://i.gyazo.com/7b01cb02b61b371cf3eed204851983dc.png)](https://gyazo.com/7b01cb02b61b371cf3eed204851983dc)
+ 
+## Installation and Setup Instructions
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Prerequisites
+`node` & `npm` must be installed globally on your machine.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Installation:
 
-### `npm test`
+Clone down this repository. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Navigate to the folder from the terminal window and run:  
 
-### `npm run build`
+`npm install`  
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You will need to run the client and the server separately.  
+Navigate to the client and the server folders from different terminal windows and run:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+`npm start`  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To Visit the App client:
 
-### `npm run eject`
+`localhost:3000`  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Optional - Run Server
+In order to fully install the app you will need to run the server side.
+* Server - https://github.com/roystern92/psclean_server.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Reflection
+This was my first custom project. The project goal was to create a single page application customized for a small cleaning company.   
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This project focus especially on styling.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+At the end of the day, the technologies implemented in this project are React, React-Router, Redux, Bootstrap, ReactStrap, ReactScroll, ReactContextMenu and a significant amount of CSS. I chose to use the `create-react-app` boilerplate to minimize initial setup and invest more time in diving into weird technological rabbit holes.
